@@ -1,0 +1,12 @@
+import{_ as n,o as s,c as a,e}from"./app.5d2a72b5.js";const t={},p=e(`<h1 id="userinput" tabindex="-1"><a class="header-anchor" href="#userinput" aria-hidden="true">#</a> UserInput</h1><p>Often you want to check if the password matches some user content like their username or email. For this purpose, add a <code>userInputs</code> dictionary with its own sanitizer.</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> zxcvbn<span class="token punctuation">,</span> zxcvbnOptions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@zxcvbn-ts/core&#39;</span>
+
+<span class="token keyword">const</span> password <span class="token operator">=</span> <span class="token string">&#39;somePassword&#39;</span>
+<span class="token keyword">const</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">dictionary</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">userInputs</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&#39;someEmail@email.de&#39;</span><span class="token punctuation">,</span> <span class="token string">&#39;someUsername&#39;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+zxcvbnOptions<span class="token punctuation">.</span><span class="token function">setOptions</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span>
+
+<span class="token function">zxcvbn</span><span class="token punctuation">(</span>password<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,3),o=[p];function i(c,r){return s(),a("div",null,o)}var u=n(t,[["render",i],["__file","index.html.vue"]]);export{u as default};
